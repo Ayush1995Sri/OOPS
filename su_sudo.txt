@@ -1,0 +1,165 @@
+
+- why are we using sudo , for renice and -ve values ??
+
+- why are we using sudo, for chrt and real-time policies and 
+  priorities ??
+
+- let us understand some background details and practical 
+  aspects ??
+
+   - whenever we login using a login id/user id, 
+     all processes of our sessions, including shell 
+     are assigned our login id /user id ??
+     - processes are assigned user-id or login-id 
+       credentials 
+     - as per the process login-id/ credentials, 
+       each process has certain privileges ??? 
+       - a normal user processes will have 
+         normal privileges ??? can use +ve 
+         values of nice priority and cannot 
+         use -ve values - in addition, cannot 
+         use chrt and realtime policies/priorties ??
+
+       - a super-user/root user can set +ve / -ve 
+         nice priorities, as well use chrt, for 
+         real-time policies/priorities ??
+
+       - if we are given sudo access, we will be 
+         able to use +ve and -ve nice values, as well
+        as chrt and real-time scheduling - why is this 
+        so ?? 
+
+           - when we execute sudo renice -n -10 <pid>, 
+             the process executing renice will be 
+             assigned super-user id , which enables 
+             privileged access - once the command / 
+             process completes, we work, with normal 
+             id and privileges ???
+
+    - what is the use of su ???
+
+        - fundamentally, su is switch user command - 
+          it can be used, for switching to any user, 
+          including super-user/root, if we can 
+          authenticate , with the target user's 
+          passwd/key 
+
+         - we must use such user switching, with 
+           care and responsibility ??
+
+     - for every user, there is an user-id and 
+       one or more group ids 
+
+     - typically, privileges are provided to a user/login, 
+       based on user-id, but in some cases, group id(s) 
+       can be used 
+
+     - in the case of files, certain users may belong to 
+       a group and these users/processes are allowed to 
+       access certain files, based on their group and 
+       group permissions of target files 
+
+     - in certain cases, a group of users may be assigned to 
+       a group/group id and provided a common set of 
+       privileges - for instance, a group of users may be 
+       assigned to a "sudo"  group and this group may be 
+       assigned sudo access 
+
+      - ps -e -o pid,ppid,cmd,stat >  ps.txt 
+             - the above command is acceptable 
+
+      - ps -e -o pid,ppid,cmd,stat > while1.c 
+             - the above command is unacceptable 
+             - it will destroy the contents of our 
+               program file ?? 
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+
+
+
+
+
+
+
+
+
+
+            
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+

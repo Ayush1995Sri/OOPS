@@ -1,0 +1,49 @@
+- shell is a non-core system utility, which is used 
+  as a CLI 
+- shell works, with terminals - there are different terminals 
+  - for instance, there are text terminals - there are 
+    graphical user terminals - these are implemented differently, 
+    but their jobs is to provide interface to user-input and 
+    output information to the user 
+  - for supporting graphical terminals, we may use a terminal 
+    emulator utility, which manages certain terminals or 
+    terminal server, which again manages certain terminals 
+  - there are several low-level details, for managing 
+    terminals, in the system space - OS provides a good 
+    abstraction, which also, provides abstract interfaces to 
+    the shell and other commands 
+  - refer to the diagrams 
+  - check the set-up, in practical systems 
+  - in a practical set-up, check the parent process of a shell 
+    - in the case of graphical terminals, it will be the 
+      terminal emulator process or terminal server process 
+  - there are different implementations of shells, which have 
+    different features 
+  - oldest shell may be Bourne shell, the original Unix shell 
+  - korn shell, which is the improvised version of Bourne shell
+  - in addition, there is a csh, which was provided, in certain 
+    Unix versions, like BSD/freeBSD
+  - in addition, bash shell is also implemented, as part of 
+    GNU project - this shell is used widely, in Linux systems 
+  - if you wish to learn more, you may explore 
+  - you may refer to your text book or other standard references
+    - you can refer to Books, by Mark Sobell 
+  - or, refer to certain standard Administrative references, 
+    for Linux - Unix System Administration Handbook  
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+   

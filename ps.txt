@@ -1,0 +1,162 @@
+  PID  PPID CMD                         STAT PSR TT
+    1     0 /sbin/init showopts         Ss     1 ?
+    2     0 [kthreadd]                  S      1 ?
+    3     2 [ksoftirqd/0]               S      0 ?
+    5     2 [kworker/0:0H]              S<     0 ?
+    7     2 [kworker/u:0H]              S<     1 ?
+    8     2 [migration/0]               S      0 ?
+    9     2 [rcuc/0]                    S      0 ?
+   10     2 [rcub/0]                    S      0 ?
+   11     2 [rcu_preempt]               S      0 ?
+   12     2 [rcu_bh]                    S      0 ?
+   13     2 [rcu_sched]                 S      0 ?
+   14     2 [watchdog/0]                S      0 ?
+   15     2 [watchdog/1]                S      1 ?
+   16     2 [rcuc/1]                    S      1 ?
+   17     2 [ksoftirqd/1]               S      1 ?
+   19     2 [kworker/1:0]               S      1 ?
+   20     2 [kworker/1:0H]              S<     1 ?
+   21     2 [cpuset]                    S<     0 ?
+   22     2 [khelper]                   S<     1 ?
+   23     2 [kdevtmpfs]                 S      1 ?
+   24     2 [netns]                     S<     1 ?
+   25     2 [bdi-default]               S      0 ?
+   26     2 [kintegrityd]               S<     1 ?
+   27     2 [kblockd]                   S<     0 ?
+   28     2 [ata_sff]                   S<     0 ?
+   29     2 [khubd]                     S      1 ?
+   30     2 [md]                        S<     0 ?
+   33     2 [khungtaskd]                S      0 ?
+   34     2 [kswapd0]                   S      1 ?
+   35     2 [ksmd]                      SN     0 ?
+   36     2 [khugepaged]                SN     1 ?
+   37     2 [fsnotify_mark]             S      1 ?
+   38     2 [crypto]                    S<     1 ?
+   43     2 [kthrotld]                  S<     1 ?
+   44     2 [scsi_eh_0]                 S      0 ?
+   45     2 [scsi_eh_1]                 S      1 ?
+   46     2 [scsi_eh_2]                 S      1 ?
+   47     2 [scsi_eh_3]                 S      1 ?
+   48     2 [scsi_eh_4]                 S      1 ?
+   49     2 [scsi_eh_5]                 S      0 ?
+   56     2 [kpsmoused]                 S<     0 ?
+   59     2 [deferwq]                   S<     1 ?
+   98     2 [kmpath_rdacd]              S<     1 ?
+  162     2 [kworker/0:1H]              S<     0 ?
+  229     2 [jbd2/sda10-8]              S      1 ?
+  230     2 [ext4-dio-unwrit]           S<     1 ?
+  237     2 [flush-8:0]                 S      1 ?
+  262     1 /usr/lib/systemd/systemd-jo Ss     1 ?
+  263     2 [kauditd]                   S      1 ?
+  276     2 [kworker/1:2]               S      1 ?
+  283     1 /usr/lib/systemd/systemd-ud Ss     0 ?
+  309     2 [kworker/1:1H]              S<     1 ?
+  387     2 [kvm-irqfd-clean]           S<     0 ?
+  420     2 [cfg80211]                  S<     1 ?
+  424     2 [ktpacpid]                  S<     1 ?
+  426     2 [ktpacpi_nvramd]            S      1 ?
+  428     2 [hd-audio0]                 S<     1 ?
+  474     2 [jbd2/sda7-8]               S      0 ?
+  475     2 [ext4-dio-unwrit]           S<     0 ?
+  487     1 avahi-daemon: running [linu Ss     1 ?
+  489     1 /usr/sbin/haveged -w 1024 - Ss     0 ?
+  490     1 /sbin/rpcbind -w -f         Ss     0 ?
+  500     1 /usr/lib/systemd/systemd-lo Ss     1 ?
+  515     1 /usr/sbin/rsyslogd -n       Ssl    0 ?
+  516     1 login -- root               Ss     0 ?
+  521     1 /bin/dbus-daemon --system - Ss     0 ?
+  523     1 /usr/sbin/nscd --foreground Ssl    1 ?
+  535     1 /usr/sbin/NetworkManager -- Ssl    0 ?
+  546     1 /usr/lib/polkit-1/polkitd - Ssl    1 ?
+  554     1 /usr/bin/kdm                Ss     1 ?
+  565     1 /usr/sbin/modem-manager     Sl     0 ?
+  566     1 /usr/sbin/bluetoothd -n     Ss     1 ?
+  577     1 /usr/sbin/cron -n           Ss     0 ?
+  592     1 /usr/sbin/xinetd -pidfile / Ss     1 ?
+  639   554 /usr/bin/Xorg -br :0 vt7 -n Ss+    0 tty7
+  677     1 /usr/lib/postfix/master     Ss     1 ?
+  692   677 qmgr -l -t fifo -u          S      0 ?
+  698   554 -:0                         S      0 ?
+  716   698 /bin/sh /usr/bin/startkde   Ss     1 ?
+  769     1 /usr/bin/dbus-launch --sh-s S      0 ?
+  770     1 /bin/dbus-daemon --fork --p Ss     0 ?
+  771   716 /usr/bin/gpg-agent --sh --d Ss     0 ?
+  772   716 /usr/bin/ssh-agent /etc/X11 Ss     1 ?
+  812     1 /usr/lib/kde4/libexec/start S      0 ?
+  813     1 kdeinit4: kdeinit4 Running. Ss     1 ?
+  814   813 kdeinit4: klauncher [kdeini S      0 ?
+  816     1 kdeinit4: kded4 [kdeinit]   Sl     1 ?
+  820     1 kdeinit4: kglobalaccel [kde S      1 ?
+  824     1 /usr/bin/kactivitymanagerd  Sl     1 ?
+  825     1 /usr/lib/upower/upowerd     Ssl    1 ?
+  826   716 kwrapper4 ksmserver         S      0 ?
+  830   813 kdeinit4: ksmserver [kdeini Sl     1 ?
+  860     1 /usr/lib/udisks2/udisksd -- Ssl    0 ?
+  899   830 kwin -session 10158fce1de00 Sl     0 ?
+  907     1 /usr/bin/knotify4           SLl    1 ?
+  911     1 kdeinit4: plasma-desktop [k Sl     0 ?
+  915   911 ksysguardd                  S      0 ?
+  918     1 /usr/bin/kuiserver          S      1 ?
+  933     1 kdeinit4: krunner [kdeinit] Sl     0 ?
+  934   813 kdeinit4: nepomukserver [kd Sl     1 ?
+  937   934 /usr/bin/nepomukservicestub SNl    0 ?
+  939     1 /usr/bin/nepomukcontroller  S      1 ?
+  941     1 kdeinit4: kmix [kdeinit] -s Sl     1 ?
+  942   813 kdeinit4: konqueror [kdeini S      0 ?
+  945   813 kdeinit4: konqueror [kdeini S      1 ?
+  946   813 kdeinit4: konqueror [kdeini S      0 ?
+  947   813 kdeinit4: konqueror [kdeini S      1 ?
+  948   813 kdeinit4: konqueror [kdeini S      0 ?
+  949   813 kdeinit4: konqueror [kdeini S      1 ?
+  950   813 kdeinit4: konqueror [kdeini S      0 ?
+  951   813 kdeinit4: konqueror [kdeini S      1 ?
+  952   813 kdeinit4: konqueror [kdeini S      0 ?
+  953   813 kdeinit4: konqueror [kdeini S      0 ?
+  954   813 kdeinit4: konqueror [kdeini S      1 ?
+  955   813 kdeinit4: konqueror [kdeini S      1 ?
+  958     1 /usr/bin/kgpg -session 1015 Sl     1 ?
+  959   813 kdeinit4: konqueror [kdeini S      0 ?
+  960   813 kdeinit4: konqueror [kdeini S      1 ?
+  961   813 kdeinit4: konqueror [kdeini S      0 ?
+  962   813 kdeinit4: konqueror [kdeini S      0 ?
+  967   813 kdeinit4: konqueror [kdeini S      0 ?
+  968   813 kdeinit4: konqueror [kdeini S      0 ?
+  969   813 kdeinit4: konqueror [kdeini S      0 ?
+  971   813 kdeinit4: konqueror [kdeini S      1 ?
+  979   813 kdeinit4: konqueror [kdeini S      1 ?
+  980   813 kdeinit4: konqueror [kdeini S      0 ?
+  982     1 kdeinit4: konsole [kdeinit] Sl     1 ?
+  983   813 kdeinit4: dolphin [kdeinit] Sl     1 ?
+  985     1 kdeinit4: konsole [kdeinit] Sl     1 ?
+  986   813 kdeinit4: dolphin [kdeinit] Sl     1 ?
+ 1000     1 /usr/bin/pulseaudio --start S<l    0 ?
+ 1004     1 /usr/lib/kde4/libexec/polki Sl     0 ?
+ 1005     1 kdeinit4: klipper [kdeinit] S      1 ?
+ 1010   982 /bin/bash                   Ss+    0 pts/0
+ 1012   985 /bin/bash                   Ss+    1 pts/1
+ 1084   937 /usr/bin/virtuoso-t +foregr SNl    1 ?
+ 1092     1 kdeinit4: konsole [kdeinit] Sl     1 ?
+ 1100  1092 /bin/bash                   Ss+    0 pts/3
+ 1154     2 [jbd2/sda1-8]               S      1 ?
+ 1155     2 [ext4-dio-unwrit]           S<     1 ?
+ 1193     2 [ext4-dio-unwrit]           S<     0 ?
+ 1214     2 [ext4-dio-unwrit]           S<     0 ?
+ 1237   934 /usr/bin/nepomukservicestub SNl    0 ?
+ 1242  1092 /bin/bash                   Ss     1 pts/4
+ 1375  1092 /bin/bash                   Ss     0 pts/5
+ 1404  1375 su - babu                   S      0 pts/5
+ 1405  1404 -bash                       S+     0 pts/5
+ 1766     2 [migration/1]               S      1 ?
+ 1768     2 [irq/42-mei]                S      0 ?
+ 1771     2 [kworker/u:17]              S      0 ?
+ 1772     2 [kworker/u:18]              S      0 ?
+ 1801   677 pickup -l -t fifo -u        S      0 ?
+ 1930     1 kdeinit4                    Ss     0 ?
+ 1964     2 [kworker/0:1]               S      0 ?
+ 2199   516 -bash                       Ss+    1 tty1
+ 2242     1 login -- root               Ss     0 ?
+ 2245  2242 -bash                       Ss+    1 tty2
+ 2324   813 kdeinit4: dolphin [kdeinit] Sl     0 ?
+ 2349   813 /usr/bin/okular /mnt2/os_di S      0 ?
+ 2394     2 [kworker/0:2]               S      0 ?
+ 2479  1242 ps -e -o pid,ppid,cmd,stat, R+     1 pts/4
